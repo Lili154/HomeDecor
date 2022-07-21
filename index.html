@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home decor</title>
+	<link rel="stylesheet"  href="styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img src="images/download.png">
+		<ul id="test">
+			<li><a href="#">Home</a></li>
+			<li><a href="dinning_room/dinning_room.html"> Dinning room</a></li>
+			<li><a href="bedroom/bedroom.html"> Bedroom</a></li>
+			<li><a href="kitchen/kitchen.html">Kitchen</a></li>
+			<li><a href="bathroom/bathroom.html">Bathroom</a></li>
+			<li><a href="hollway/hollway.html">Hollway</a></li>
+		</ul>
+	</div>
+	<main class="video">
+		<div class="video_wrapper">
+			<h1><a href="https://www.homestratosphere.com/top-interior-design-websites/">Great design begins<br>
+			 with an even greater story</a></h1>
+		  	<video width="100%" height="auto" autoplay muted loop>
+			<source src="images/file.mp4" type="video/mp4" />
+		  </video>
+	    </div>
+	</main>
+	<section class="slide">
+			<div class="pp">
+				<p>It is rightly said that a house built on care, comfort, positive conversations, beauty, comfort will always please. It depends only on the people living in the house what the atmosphere will be like inside. The energy of a home is very sensitive to what is done, said, felt inside it.
+
+				To make the house always a wonderful place to relax, create the appropriate atmosphere in it. If there is a dispute, then you need to go for a walk and resolve it outside, so that when you return home, there is a pleasant feeling of relief that the dispute has been resolved and the house is again a place of pleasure and comfort.
+				</p>
+			</div>
+			<div>
+				<img class="mySlides" src="images/img1.jpg" width="400px" height="450px">
+	            <img class="mySlides" src="images/img2.jfif" width="400px" height="450px">
+	            <img class="mySlides" src="images/img3.jfif" width="400px" height="450px">
+	            <img class="mySlides" src="images/img5.jpg" width="400px" height="450px">
+				<img class="mySlides" src="images/img6.jfif" width="400px" height="450px">
+			</div>
+		</div>
+	</section>
+	<script>
+		  let myIndex = 0;
+		  carousel();
+
+		  function carousel() {
+		  let i;
+		  let x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {
+			myIndex = 1
+		}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 2000);
+		  }
+	</script>
+	<section class="footer">
+		<div class="address">
+			<h1>Address</h1>
+			<h6>00 str. 00 home</h6>
+			<h6>info@mysite.ru</h6>
+			<h6>Tel:+7(495)000-00-00</h6>
+			<div class="icons">
+				<a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon" ></i></a>
+				<a href="https://twitter.com/"><i class="fab fa-twitter icon" ></i></a>
+				<a href="https://www.instagram.com/"><i class="fab fa-instagram icon" ></i></a>
+			</div>
+		</div>
+		<form target="_blanck" action="https://formsubmit.co/petrosyanlilit895@gmail.com" method="POST">
+			<div class="send">
+				<input type="hidden" name="_subject" value="New email...">
+				<input type="email" placeholder="Email" name="email" required>
+				<input type="text" name="massage" value="Write your message here" required>
+				<button type="submit" class="but">OK</button>
+			</div>
+		</form>
+	</section>
+</body>
+</html>

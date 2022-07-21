@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.header{
+    background-color: #908C8A;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+.header>img{
+	height: 100px;
+    width: 250px;
+    padding-left: 18px;
+    
+}
+.header>ul{
+	display: flex;
+	float: right;
+	justify-content: space-around;
+	list-style: none;
+	margin-top: 40px;
+}
+.header>ul>li>a{
+	color:#514848;
+	padding-right: 44px;
+	font-size: 14px;
+	text-decoration: none;
+}
+.header>ul>li>a:hover{
+	color:#0d0007 ;
+}
+video{
+	height: auto;
+	position: relative;
+	
+}
+h1>a{
+	color:#2c2626;
+	margin-top: 14%;
+	margin-left: 29%;
+	position: absolute;
+	z-index:1;
+	font-size: 50px;
+	font-style: italic;
+	text-decoration: none;
+	
+}
+h1:hover{
+	color: #0d0007;
+}
+.slide{
+	width: 100%;
+    font-size: 18px;
+	font-style: italic;
+	color: #514848;
+    margin-top: 8%;
+    line-height: 30px;
+	display: flex;
+	justify-content: space-around;
+	padding: 3%;
+}	
+.slide>div{
+	width: 400px;
+}
+.slide>.pp{
+	border-radius: 7%;
+	padding: 1%;
+	box-shadow: inset -1px 3px 8px 5px #514848, 2px 5px 16px 0px #514848, 5px 5px 15px 5px rgba(0,0,0,0);;
+}
+.footer{
+	margin-top: -4px;
+	background-color: #514848;
+	display: flex;
+	justify-content: space-around;
+	height: 175px;
+}
+.address{
+	margin-top: 5px;
+}
+.address>h1{
+	font-size: 25px;
+	color:  #0d0007;
+}
+.address>h6{
+	font-size: 15px;
+	color:  #0d0007;
+	margin-top: 10px;
+}
+.address>.icons>a{
+	margin-top: 5%;
+	color: #0d0007;
+	font-size: 30px;
+	padding: 3px;
+}
+.address>.icons {
+    margin-top: 7px;
+}
+.send{
+	align-content: center;
+	width: 400px;
+}
+.send>input{
+	border: 3px solid  #0d0007;
+	margin-top: 4%;
+	height: 40px;
+	width: 400px;
+	
+}
+.send>.but{
+	border: 3px solid  #0d0007;
+	height: 40px;
+	width: 400px;
+	margin-top: -2%;
+	font-style: italic;
+	font-size: 20px;
+	color: #2c2626;
+	margin-top: 4%;
+}
+.but:hover{
+	background-color: #514848;
+}
